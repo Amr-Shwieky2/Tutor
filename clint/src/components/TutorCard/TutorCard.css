@@ -1,0 +1,35 @@
+.card {
+    width: 300px;
+    background: transparent;
+    padding: 10px;
+    text-align: left;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px var(--main-color);
+    color: var(--main-white);
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.card h2 {
+    font-size: 1.3rem;
+    margin-top: 10px;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: var(--main-white);
+}
+
+.card a {
+    text-decoration: none;
+}
+
+.tutor-rating {
+    font-size: 14px;
+    color: #FCC08A; /* Or color for your rating stars */
+    margin: 5px 0;
+  }

@@ -1,0 +1,56 @@
+.session-card {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%; /* Adjust width as needed */
+    margin-top: -21%;
+    margin-left: 60%;
+    height: 60vh;
+
+  }
+  .session-image{
+    width: 100%;
+
+  }
+  .session-item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 6%;
+
+  }
+  
+  .session-title {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .session-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .message-btn {
+    background-color: #068E6E; /* Change to match your design color */
+    color: white;
+    border: none;
+    border-radius: 7px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 30px ;
+    cursor: pointer;
+  }
+  .message-btn a{
+    color: #fff;
+  }
+  
+  /* Add responsiveness and other styles as necessary */
+  

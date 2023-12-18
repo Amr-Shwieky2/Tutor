@@ -1,0 +1,70 @@
+/* Home.css */
+
+.homepage-container {
+    height: 85vh;
+    background-image: url('./img/group-ipu.png');
+    background-size: cover;
+    background-position: center;
+    color: #000000;
+    border: #000000 3px solid;
+    display: flex; /* Add display flex to align children */
+  }
+  
+  .home-content {
+    margin-top: 150px;
+    margin-left: 150px;
+    max-width: 600px;
+    max-height: 500px;
+    flex: 1; /* Take up remaining space */
+    text-align: left;
+    padding: 20px;
+    
+  }
+  
+  .learn-from-home-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+  
+  .learn-sub-0,
+  .learn-sub-1,
+  .learn-sub-2 {
+    display: block;
+  }
+  
+  .lorem-ipsum-text {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .tutor-text {
+    font-weight: bold;
+  }
+  
+  .learn {
+    color: rgb(251, 156, 70);
+  }
+  
+  .your-button {
+    background-color: rgb(6, 142, 110);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 26px;
+  }
+  
+  .your-button:hover {
+    background-color: rgb(4, 111, 81); /* Darken the color on hover */
+  }
+
+  .your-button a{
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+  }

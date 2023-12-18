@@ -1,0 +1,47 @@
+.CoursesCard{
+    width: 52%; /* Adjust width as needed */
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    /* position: relative; */
+    display: flex;
+    font-family: 'Arial', sans-serif; 
+    margin-left: 2%;
+
+    width: 300px;
+    background: #fff;
+    padding: 10px;
+    text-align: left;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+.Card-sec{
+    display: flex;
+    background: #fff;
+    margin-left: 2%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    width: 50%;
+
+}
+
+.Course-item{
+    padding: 20px;
+}
+
+.Course-title{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 0 10px 0;
+}
+
+.Course-description{
+    padding: 10px 0 10px 0;
+}
+.Course-price{
+    color: #FCC08A;
+}

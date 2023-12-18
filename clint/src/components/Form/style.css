@@ -1,0 +1,140 @@
+.input-group label {
+  display: block;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  color: var(--primary-color);
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.input-group input {
+  display: block;
+  padding: 0.5rem;
+  width: 50rem;
+}
+
+.update-btn {
+  width: 8rem;
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.error-message {
+  color: red;
+  font-size: 1.2rem;
+}
+
+
+
+
+/* style.css */
+
+.tutor-form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-group button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-group button:hover {
+  background-color: #45a049;
+}
+
+.loading {
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.photo-container {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+
+}
+
+.photo-container label {
+  margin: 10px;
+  font-size: 20px;
+}
+
+.photo-container input {
+  margin: 5px;
+  font-size: 20px;
+}
+
+.photo-container img {
+
+  width: 200px;
+  height: 200px;
+  border-radius: 500px;
+}
+
+.photo-container button {
+  background-color: red;
+  font-size: 20px;
+  margin: 20px;
+  border-radius: 5px;
+  padding: 10px;
+  color: #fff;
+}
+
+.tutor-form button {
+  background-color: #45a049;
+  width: 40%;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 10px;
+  color: #fff;
+}
+
+.tutor-form {
+  text-align: center;
+  background-color: transparent;
+  padding: 40px;
+  margin: 20px auto 20px auto;
+  border-radius: 5px;
+}
+
+.error {
+  color: red;
+  font-size: large;
+}
+
+.tutor-foSc {
+  height: 100%;
+  background-image: url('./img/add.gif');
+  background-size: cover;
+  background-position: center;
+  color: #000000;
+  
+  display: flex;
+}

@@ -1,0 +1,32 @@
+.about-section {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 50%;
+    margin-left: 2%;
+    margin-top: -2% ; /* Adjust margin as needed */
+    font-family: 'Arial', sans-serif; /* Use the font that matches your design */
+  }
+  
+  .about-section h2 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .about-section p {
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .read-more {
+    color: #FCC08A;
+    text-decoration: none;
+    display: inline-block; /* or 'block' if you want it to be on a new line */
+    margin-top: 10px;
+  }
+  
+  .read-more:hover {
+    text-decoration: underline; /* Optional: adds an underline on hover */
+  }
+  

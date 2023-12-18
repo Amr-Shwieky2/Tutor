@@ -1,0 +1,105 @@
+/* Auth.css */
+.background-Auth {
+  margin-top: 70px;
+  height: 100vh; /* Use 100vh to cover the entire viewport height */
+  background-image: url('./img/background-auth.jpg');
+  background-size: 40%;
+  background-repeat: no-repeat;
+  
+}
+
+.background-Auth2 {
+  margin-top: 150px;
+  height: 100vh; /* Use 100vh to cover the entire viewport height */
+  background-image: url('./img/background-auth.jpg');
+  background-size: 40%;
+  background-repeat: no-repeat;
+  
+}
+
+.container-Auth {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 400px;
+  width: 350px;
+  
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  /* box-shadow: 10px 20px 10px rgb(26, 186, 149); */
+  background-color: #fff;
+  text-align: center;
+  
+}
+
+.container-Auth h2 {
+  margin: 10px;
+  font-size: 30px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-group p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.form-group a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.auth-btn {
+  background-color: rgb(251, 156, 70);
+  color: #fff;
+  margin: 20px 0px 20px 0px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.auth-btn:hover {
+  background-color: rgb(219, 122, 32);
+}
+.switch{
+  color: #007bff;
+}
+.social-buttons {
+  margin-top: 15px;
+}
+
+.social-buttons button {
+  margin-right: 10px;
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.social-buttons button:hover {
+  background-color: #f0f0f0;
+}
