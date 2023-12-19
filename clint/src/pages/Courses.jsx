@@ -24,24 +24,15 @@ function Courses() {
     fetchTutors(filterCriteria);
   };
 
+  useEffect(() =>{
+    console.log("course = ", course);
+    console.log("tutors = ", tutors);
+  },[course, tutors])
+
   return (
     <div>
       {/* Filter Form */}
       <form className="filter-form">
-        <label className="filter-label">
-          Gender:
-          <select
-            className="filter-select"
-            name="gender"
-            value={filterCriteria.gender}
-            onChange={handleFilterChange}
-          >
-            <option value="">Select Gender</option>
-            <option value="Male">Male</option>
-            <option value="Female">Female</option>
-            <option value="Other">Other</option>
-          </select>
-        </label>
         <label className="filter-label">
           Language:
           <input
@@ -82,7 +73,7 @@ function Courses() {
           Apply Filters
         </button>
       </form>
-      <CoursesInf course={course}/>
+      <CoursesInf tutors={tutors}/>
     </div>
   );
 }

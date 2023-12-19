@@ -52,7 +52,8 @@ export const CourseProvider = ({ children }) => {
 
   useEffect(() => {
     // console.log("currentCourse", currentCourse);
-  }, [currentCourse]);
+    fetchCourses();
+  }, []);
 
   const addNewCourse = async (Course, tutorId) => {
     setIsLoading(true);

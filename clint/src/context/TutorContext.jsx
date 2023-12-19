@@ -79,7 +79,7 @@ export const TutorProvider = ({ children }) => {
   );
 
   useEffect(() => {
-    fetchTutors("");
+    fetchTutors([]);
   }, []);
 
   const addNewTutor = async (tutor) => {
