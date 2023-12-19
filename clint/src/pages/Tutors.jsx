@@ -4,10 +4,9 @@ import { TutorCard } from "../components";
 import "./style/Tutors.css";
 
 const Tutors = () => {
-  const { tutors, isLoading, fetchTutors, fetchNearTutor } = useGlobalTutorContext();
- 
+  const { tutors, isLoading, fetchTutors, fetchNearTutor } =
+    useGlobalTutorContext();
 
-  
   useEffect(() => {
     fetchTutors([]);
   }, []);
@@ -18,18 +17,16 @@ const Tutors = () => {
   });
   const handleNearTutorChange = (e) => {
     const { name, value } = e.target;
-    setNearTutorCriteria((prevCriteria) => ({ ...prevCriteria, [name]: value }));
+    setNearTutorCriteria((prevCriteria) => ({
+      ...prevCriteria,
+      [name]: value,
+    }));
   };
-
-  
 
   const handleNearTutorSubmit = (e) => {
     e.preventDefault();
     fetchNearTutor(nearTutorCriteria.zipcode, nearTutorCriteria.distance);
   };
-
-  
-  
 
   if (isLoading) {
     return <div className="loading">Loading...</div>;

@@ -29,12 +29,11 @@ const useTutorForm = (tutorId) => {
     languages: null,
     careers: null,
     photo: null,
-   
   });
 
   const [loading, setLoading] = useState(false);
 
-  const { currentTutor, addNewTutor, editTutor } = useGlobalTutorContext();
+  const { currentTutor, addNewTutor, editTutor, uploadTutorPhoto } = useGlobalTutorContext();
 
   useEffect(() => {
     if (tutorId) {
@@ -43,7 +42,7 @@ const useTutorForm = (tutorId) => {
       const fetchTutor = async () => {
         try {
           const tutorData = await tutorAPI.getTutor(tutorId);
-          setTutor(tutorData.data);
+          setTutor(tutorData.data.data);
           setLoading(false);
         } catch (error) {
           console.error("Error fetching tutor:", error);
@@ -87,6 +86,12 @@ const useTutorForm = (tutorId) => {
   const handleRemoveImage = () => {
     setSelectedPhoto(null);
   };
+  const handleSubmitPhoto = async (e) => {
+    e.preventDefault();
+
+    const tutorData = await tutorAPI.getTutor(tutorId);
+    const temp = await uploadTutorPhoto(tutor)
+  }
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -168,6 +173,7 @@ const useTutorForm = (tutorId) => {
     handleRemoveImage,
     handleChange,
     handleSubmit,
+    handleSubmitPhoto,
     handleFileChange,
   };
 };

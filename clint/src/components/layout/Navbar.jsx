@@ -6,7 +6,7 @@ import { useEffect } from "react";
 
 const Navbar = () => {
   const { user, loading, logout } = useGlobalAuthContext();
-  const { currentTutor, addNewTutor, editTutor, fetchTutor } =
+  const { currentTutor, tutors, fetchTutors, fetchTutor } =
     useGlobalTutorContext();
 
   const navListItems = [
@@ -44,15 +44,19 @@ const Navbar = () => {
   ];
 
   useEffect(() => {
-    console.log(user);
-    console.log(currentTutor);
+    if (user && (user.role === "admin" || user.role === "publisher")) {
+      if (!tutors.length) {
+        fetchTutors([]);
+      } else {
+        // Find the tutor whose user field matches user._id
+        const tempTutor = tutors.find((tutor) => tutor.user === user._id);
 
-    const key = currentTutor.id;
-    console.log(key);
-    if (key) {
-      fetchTutor(key);
+        if (tempTutor) {
+          fetchTutor(tempTutor.id); // Fetch the tutor if found
+        }
+      }
     }
-  }, [currentTutor]);
+  }, [loading, user, fetchTutors]);
 
   return (
     <nav className="navbar">

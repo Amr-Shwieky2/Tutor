@@ -36,6 +36,7 @@
     cursor: pointer; /* Changes the cursor to indicate the button is clickable */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     transition: background-color 0.3s, box-shadow 0.3s, transform 0.2s; /* Smooth transitions for hover effects */
+    color: white;
   }
   
   button:hover {

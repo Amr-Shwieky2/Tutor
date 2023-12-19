@@ -2,9 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useGlobalAuthContext } from '../../hooks';
 import './TutorCard.css';
+import staticImage from "../../assets/tutor1.jpg" 
 
 // Static image for testing
-const staticImage = 'https://img.freepik.com/free-photo/portrait-female-teacher-white_114579-77743.jpg?size=626&ext=jpg&ga=GA1.2.1233141113.1701454930&semt=sph'; // Replace with your actual image path
+// const staticImage = 'https://img.freepik.com/free-photo/portrait-female-teacher-white_114579-77743.jpg?size=626&ext=jpg&ga=GA1.2.1233141113.1701454930&semt=sph'; // Replace with your actual image path
 
 const TutorCard = ({
   id,
