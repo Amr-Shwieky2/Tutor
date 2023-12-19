@@ -24,10 +24,10 @@ function Courses() {
     fetchTutors(filterCriteria);
   };
 
-  useEffect(() =>{
-    console.log("course = ", course);
-    console.log("tutors = ", tutors);
-  },[course, tutors])
+  // useEffect(() =>{
+  //   console.log("course = ", course);
+  //   console.log("tutors = ", tutors);
+  // },[course, tutors])
 
   return (
     <div>

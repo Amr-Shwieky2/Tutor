@@ -38,7 +38,7 @@
   
   .tutor-rating {
     font-size: 14px;
-    color: #FCC08A; /* Or color for your rating stars */
+    color: var(--primary-color); /* Or color for your rating stars */
     margin: 5px 0;
   }
   

@@ -50,7 +50,7 @@ exports.createTutor = asyncHandler(async (req, res, next) => {
 
   res.status(201).json({
     success: true,
-    data: tut
+    data: tutor
   });
 });
 
@@ -144,14 +144,14 @@ exports.getTutorsInRadius = asyncHandler(async (req, res, next) => {
 exports.tutorPhotoUpload = asyncHandler(async (req, res, next) => {
   const tut = await Tutor.findById(req.params.id);
 
-  if (!tutor) {
+  if (!tut) {
     return next(
       new ErrorResponse(`Tutor not found with id of ${req.params.id}`, 404)
     );
   }
 
   // Make sure user is tutor owner
-  if (tutor.user.toString() !== req.user.id && req.user.role !== 'admin') {
+  if (tut.user.toString() !== req.user.id && req.user.role !== 'admin') {
     return next(
       new ErrorResponse(
         `User ${req.params.id} is not authorized to update this tutor`,
@@ -182,7 +182,7 @@ exports.tutorPhotoUpload = asyncHandler(async (req, res, next) => {
   }
 
   // Create custom filename
-  file.name = `photo_${tutor._id}${path.parse(file.name).ext}`;
+  file.name = `photo_${tut._id}${path.parse(file.name).ext}`;
 
   file.mv(`${process.env.FILE_UPLOAD_PATH}/${file.name}`, async err => {
     if (err) {

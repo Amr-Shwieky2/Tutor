@@ -20,7 +20,7 @@
   }
   
   .read-more {
-    color: #FCC08A;
+    color: var(--primary-color);
     text-decoration: none;
     display: inline-block; /* or 'block' if you want it to be on a new line */
     margin-top: 10px;

@@ -63,7 +63,6 @@ const useCourseForm = (tutorId, courseId) => {
     e.preventDefault();
     let isValid = true;
     const newErrors = {};
-    console.log("yes added", course);
 
     if (!course.title || course.title.length < 3 || course.title.length > 100) {
       newErrors.title = "Please provide a title between 3 and 100 characters";

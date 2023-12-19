@@ -69,8 +69,9 @@ const useAuthForm = (isRegister) => {
     if (isValid) {
       if (isRegister) {
         register(formData);
-        console.log(formData);
+        
         if(formData.role === "publisher"){
+          console.log("from in side",formData.role);
           navigate("/add"); 
         }
       } else {

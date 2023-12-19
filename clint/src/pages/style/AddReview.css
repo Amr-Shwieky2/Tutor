@@ -30,7 +30,7 @@
   }
   
   .submit-button {
-    background-color: #4caf50;
+    background-color:var(--primary-color);
     color: white;
     padding: 10px 15px;
     border: none;

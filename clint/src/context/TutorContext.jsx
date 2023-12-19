@@ -21,10 +21,8 @@ export const TutorProvider = ({ children }) => {
         .map((key) => {
           if (key === "averageRating") {
             // Special handling for averageRating
-            console.log(filters[key]);
             const numericRating = parseFloat(filters[key]);
             if (!isNaN(numericRating)) {
-              console.log("object");
               return `${key}[gte]=${numericRating}`;
             }
           } else {
@@ -78,17 +76,19 @@ export const TutorProvider = ({ children }) => {
     [currentTutor.id]
   );
 
-  useEffect(() => {
-    fetchTutors([]);
-  }, []);
+  // useEffect(() => {
+  //   fetchTutors([]);
+  // }, []);
 
   const addNewTutor = async (tutor) => {
     setIsLoading(true);
     try {
+      console.log(tutor);
       const response = await tutorAPI.addTutor(tutor);
-      console.log(response.data);
+      console.log(response);
       handleSuccess("tutor added successfully");
-      return response.data.id;
+      fetchTutor(response.data.data.id);
+      return response.data.data.id;
     } catch (err) {
       showToast("An error occurred while adding the tutor", "error");
     } finally {

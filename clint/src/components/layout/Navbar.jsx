@@ -6,7 +6,8 @@ import { useEffect } from "react";
 
 const Navbar = () => {
   const { user, loading, logout } = useGlobalAuthContext();
-  const { currentTutor, addNewTutor, editTutor } = useGlobalTutorContext();
+  const { currentTutor, addNewTutor, editTutor, fetchTutor } =
+    useGlobalTutorContext();
 
   const navListItems = [
     {
@@ -27,16 +28,36 @@ const Navbar = () => {
     {
       to: "/add",
       text: "Add Tutor",
-      condition: user && (user.role === "admin" || user.role === "publisher"),
+      condition:
+        user &&
+        (user.role === "admin" || user.role === "publisher") &&
+        Object.keys(currentTutor).length === 0,
     },
-   
+    {
+      to: `/tutor/${currentTutor.id}/dashboard`,
+      text: "dashboard",
+      condition:
+        user &&
+        (user.role === "admin" || user.role === "publisher") &&
+        Object.keys(currentTutor).length !== 0,
+    },
   ];
 
+  useEffect(() => {
+    console.log(user);
+    console.log(currentTutor);
+
+    const key = currentTutor.id;
+    console.log(key);
+    if (key) {
+      fetchTutor(key);
+    }
+  }, [currentTutor]);
 
   return (
     <nav className="navbar">
       <Link to="/">
-        <h1 className="logo">Tutor</h1>
+        <h1 className="logo">TutorHub</h1>
       </Link>
       <ul className="nav-links">
         {navListItems.map(
@@ -55,9 +76,9 @@ const Navbar = () => {
           </>
         ) : (
           <div className="login-sec">
-          <Link to="/auth" className="login-btn">
-            Log In
-          </Link>
+            <Link to="/auth" className="login-btn">
+              Log In
+            </Link>
           </div>
         )}
       </div>

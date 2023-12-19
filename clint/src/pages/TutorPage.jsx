@@ -25,12 +25,16 @@ const TutorPage = () => {
   useEffect(() => {
     if (!isLoading && !tempTutor) {
       setTempTutor(tutorId);
-      fetchTutor(tutorId);
+      if (currentTutor.id !== tutorId) {
+        fetchTutor(tutorId);
+      }
       fetchCourseByTutor(tutorId);
       fetchReviewByTutor(tutorId);
     } else if (tempTutor !== tutorId) {
       setTempTutor(tutorId);
-      fetchTutor(tutorId);
+      if (currentTutor.id !== tutorId) {
+        fetchTutor(tutorId);
+      }
       fetchCourseByTutor(tutorId);
       fetchReviewByTutor(tutorId);
     }
@@ -38,7 +42,7 @@ const TutorPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    navigate(`/tutor/${tutorId}/addReview`)
+    navigate(`/tutor/${tutorId}/addReview`);
   };
 
   if (isLoading) {

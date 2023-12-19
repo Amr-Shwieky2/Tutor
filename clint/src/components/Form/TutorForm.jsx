@@ -8,12 +8,8 @@ const TutorForm = ({ tutorId, btnText }) => {
     tutor,
     loading,
     errors,
-    selectedPhoto,
-    setSelectedPhoto,
-    handleRemoveImage,
     handleChange,
     handleSubmit,
-    handleFileChange,
   } = useTutorForm(tutorId);
 
   if (loading) {
@@ -23,39 +19,6 @@ const TutorForm = ({ tutorId, btnText }) => {
   return (
     <div className="tutor-foSc">
       <form onSubmit={handleSubmit} className="tutor-form">
-        <div className="photo-container">
-          <label htmlFor="photo">Profile Photo:</label>
-          <input
-            type="file"
-            id="photo"
-            name="photo"
-            onChange={handleFileChange}
-            accept="image/*"
-          />
-          {selectedPhoto ? (
-            <div>
-              <div>
-                <img
-                  src={selectedPhoto}
-                  alt="Selected Profile"
-                  className="selected-photo"
-                />
-              </div>
-              <div>
-                <button type="button" onClick={handleRemoveImage}>
-                  Remove Image
-                </button>
-              </div>
-            </div>
-          ) : (
-            <img
-              src="./img/default-photo.jpg"
-              alt="Default Profile"
-              className="default-photo"
-            />
-          )}
-        </div>
-
         <div className="form-group">
           <label htmlFor="name">Name:</label>
           <input

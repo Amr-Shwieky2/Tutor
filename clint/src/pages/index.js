@@ -7,6 +7,7 @@ import Tutors from './Tutors';
 import AddReview from './AddReview';
 import AddCourses from './AddCourses';
 import Courses from './Courses';
+import Dashboard from './Dashboard';
 export {
     Auth,
     Home,
@@ -16,5 +17,6 @@ export {
     Tutors,
     AddReview,
     AddCourses,
-    Courses
+    Courses, 
+    Dashboard
 }

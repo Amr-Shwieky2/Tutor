@@ -17,11 +17,11 @@ const TutorProfile = ({
   averageRating,
   averageCost,
 }) => {
-  const { loading } = useGlobalAuthContext();
+  // const { loading } = useGlobalAuthContext();
 
-  if (!photo || loading) {
-    return <div className="loading">Loading...</div>;
-  }
+  // if (!photo || loading) {
+  //   return <div className="loading">Loading...</div>;
+  // }
 
   return (
     <>

@@ -53,7 +53,6 @@ const LanguageSelector = ({ selectedLanguages, onLanguageChange }) => {
     }),
     onSubmit: (values) => {
       // Handle form submission here
-      console.log('Submitted values:', values);
       onLanguageChange(values.selectedLanguages); // Pass selected languages to the parent component
     },
   });

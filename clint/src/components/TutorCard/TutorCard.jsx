@@ -1,8 +1,10 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { useGlobalAuthContext } from "../../hooks";
-import "./TutorCard.css";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { useGlobalAuthContext } from '../../hooks';
+import './TutorCard.css';
 
+// Static image for testing
+const staticImage = 'https://img.freepik.com/free-photo/portrait-female-teacher-white_114579-77743.jpg?size=626&ext=jpg&ga=GA1.2.1233141113.1701454930&semt=sph'; // Replace with your actual image path
 
 const TutorCard = ({
   id,
@@ -11,7 +13,6 @@ const TutorCard = ({
   gender,
   languages,
   careers,
-  photo,
   averageRating,
   averageCost,
 }) => {
@@ -24,7 +25,8 @@ const TutorCard = ({
   return (
     <div className="card">
       <Link to={`/tutor/${id}`}>
-        <img className="tutor-image" src={photo} alt="tutor-img" />
+        {/* Use static image for all cards */}
+        <img className="tutor-imageC" src={staticImage} alt="tutor" />
       </Link>
       <div className="tutor-info">
         <div className="status">
@@ -34,8 +36,7 @@ const TutorCard = ({
           <p className="tutor-brand">{gender}</p>
         </div>
 
-        <p className="tutor-rating">{`${averageRating}`}</p>
-
+        <p className="tutor-rating">{averageRating}</p>
         <p className="tutor-from">{address}</p>
 
         <div>
@@ -57,7 +58,7 @@ const TutorCard = ({
         </div>
         <div className="tutor-stats">
           <span className="tutor-price">
-            Average Cost by hour: {`${averageCost}$`}
+            Average Cost by hour: {averageCost}$
           </span>
         </div>
       </div>

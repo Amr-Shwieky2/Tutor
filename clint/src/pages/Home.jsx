@@ -6,15 +6,12 @@ const Home = () => {
   return (
     <div className="homepage-container">
       <div className="home-content">
-        <h1 className="tutor-text">tutor</h1>
         <p className="learn-from-home-text">
-          <span className="learn-sub-0">Learn From Home</span>
+          <span className="learn-sub-0">Looking for your  <span className="perfect">perfect
+            </span></span>
+      
           <br />
-          <span className="learn-sub-1">
-            With <span className="learn">The Best</span>
-          </span>
-          <br />
-          <span className="learn-sub-2"> Online Language Tutors</span>
+          <span className="learn-sub-2"> Private Tutor </span>
         </p>
         <p className="lorem-ipsum-text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id interdum

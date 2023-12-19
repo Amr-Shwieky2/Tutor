@@ -4,7 +4,7 @@
     padding: 10px;
     text-align: left;
     border-radius: 5px;
-    box-shadow: 0 4px 6px var(--main-color);
+    box-shadow: 0 4px 6px var(--primary-color);
     color: var(--main-white);
 }
 
@@ -30,6 +30,6 @@
 
 .tutor-rating {
     font-size: 14px;
-    color: #FCC08A; /* Or color for your rating stars */
+    color:var(--primary-color); /* Or color for your rating stars */
     margin: 5px 0;
   }

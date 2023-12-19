@@ -31,8 +31,6 @@ const Review = ({ currentReview, currentTutor }) => {
 
   useEffect(() => {
     if (currentReview && currentReview.length > 0) {
-      // console.log("Reviews=", currentReview);
-      // console.log("tutor=", currentTutor);
       const newReviewSummary = {
         totalRating: currentTutor.averageRating,
         totalReviews: currentReview.length,

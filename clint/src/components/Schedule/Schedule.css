@@ -55,7 +55,7 @@
   }
   
   .view-full-schedule {
-    background-color: #FCC08A;
+    background-color: var(--primary-color);
     color: #fff;
     border: none;
     padding: 10px 20px;

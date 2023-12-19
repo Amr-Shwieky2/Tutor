@@ -5,38 +5,87 @@
   margin: 0  0 0px;
   padding: 15px;
   background-color: transparent;
-  font-size: 30px;
+
 }
 
-.logo{
+.logo {
   margin-top: 3px;
-  color: rgb(251, 156, 70);
+  color: rgb(19,10,9);
+  font-size: 30px;
+  margin-left: 2%;
+  font-family: 'Poppins', sans-serif; /* Updated font family */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+  cursor: pointer; /* Changes the cursor to a pointer to indicate it's clickable */
+  animation: pulse 2s infinite; /* Apply the pulse animation continuously */
 }
 
-.logo:hover{
-  color:rgb(219, 122, 32);
- 
+.logo:hover {
+  color: rgb(19,10,9);
 }
 
-.logout-btn{
-  background-color: rgb(10, 134, 243);
-  border-radius: 5px;
-  padding: 7px;
-  
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgb(160,178,79);
+  }
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px 20px rgba(166, 98, 173, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(166, 98, 173, 0);
+  }
 }
 
-.login-btn{
-  background-color: rgb(10, 134, 243);
-  border-radius: 5px;
-  padding: 9px;
-  
+
+.logout-btn {
+  background-color: rgb(160,178,79);
+  border: none; /* Removes the border */
+  border-radius: 15px; /* More pronounced rounded corners */
+  padding: 10px 20px; /* Top/bottom and left/right padding for a balanced look */
+  color: rgb(160,178,79); /* Text color */
+  text-transform: uppercase; /* Makes the text uppercase */
+  font-weight: bold; /* Makes the font bold */
+  font-family: 'Poppins', sans-serif; /* Assuming we're using the Poppins font as discussed earlier */
+  cursor: pointer; /* Changes the cursor to indicate the button is clickable */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: background-color 0.3s, box-shadow 0.3s, transform 0.2s; /* Smooth transitions for hover effects */
 }
-.log-in-and-out a{
-  color: white;
+
+.logout-btn:hover {
+  background-color: rgb(160,178,79); /* Slightly lighter shade on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Larger shadow on hover for a "lifting" effect */
+  transform: translateY(-2px); /* Moves the button up a bit to give a "button press" effect */
 }
-.login-btn:hover{
-  background-color: rgb(4, 98, 181);
+
+.log-in-and-out a {
+  color:rgb(19,10,9);
+  text-decoration: none; /* Removes underline from links */
+  display: inline-block; /* Allows padding and other box model properties */
 }
+
+/* You can use the same style for .login-btn if you want consistency */
+.login-btn {
+  background-color: rgb(160,178,79);
+  border: none; /* Removes the border */
+  border-radius: 15px; /* More pronounced rounded corners */
+  padding: 10px 20px; /* Top/bottom and left/right padding for a balanced look */
+  color: rgb(160,178,79); /* Text color */
+  text-transform: uppercase; /* Makes the text uppercase */
+  font-weight: bold; /* Makes the font bold */
+  font-family: 'Poppins', sans-serif; /* Assuming we're using the Poppins font as discussed earlier */
+  cursor: pointer; /* Changes the cursor to indicate the button is clickable */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: background-color 0.3s, box-shadow 0.3s, transform 0.2s; /* Smooth transitions for hover effects */
+}
+
+.login-btn:hover {
+  background-color: rgb(160,178,79); /* Slightly lighter shade on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Larger shadow on hover for a "lifting" effect */
+  transform: translateY(-2px); /* Moves the button up a bit to give a "button press" effect */
+}
+
 
 .nav-links{
   display: flex;
@@ -51,12 +100,15 @@
 }
 
 .nav-item a{
-  color: rgb(26, 186, 149);
+  color:rrgb(19,10,9);
+  font-size: 16px;
+  font-weight: 600
   
 }
 
 .nav-item:hover{
-  background-color: rgb(26, 186, 149);
+  background-color:rgb(122,112,106);
+  color: white;
 }
 .nav-item a:hover{
   color: white;
@@ -69,4 +121,41 @@
 .user-name{
   margin: 10px;
   padding: 0 35px 0 35px;
+  color: rgb(160,178,79);
+  font-size: 16px;
+  font-weight: bold
+}
+/* style.css */
+.footer {
+  background-color: rgb(19,10,9); /* Dark background for contrast */
+  color: #f2f2f2; /* Light text color for readability */
+  text-align: center; /* Centered text */
+  padding: 1em 0; /* Padding above and below the text */
+  position: relative; /* Position relative to the layout */
+  bottom: 0; /* Stick to the bottom */
+  width: 100%; /* Full width */
+  font-size: 0.9em; /* Smaller font size for the footer text */
+  border-top: 4px solid rgb(160,178,79); /* A colored border top to match the TutorHub theme */
+}
+
+.container-sh {
+  display: flex;
+  flex-direction: column; /* Stack navbar, main content, and footer */
+  min-height: 100vh; /* Minimum height to take full viewport height */
+}
+
+main {
+  flex: 1; /* Allows main to expand and footer to stick at the bottom */
+}
+
+/* Add any additional global styles, such as for the main content area */
+main {
+  padding: 1em; /* Add padding for the main content */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer {
+    font-size: 0.8em; /* Slightly smaller font size on smaller screens */
+  }
 }

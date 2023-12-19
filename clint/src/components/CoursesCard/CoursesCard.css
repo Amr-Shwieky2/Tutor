@@ -26,6 +26,7 @@
     border-radius: 10px;
     padding: 20px;
     width: 50%;
+    margin-top: -10%;
 
 }
 
@@ -43,5 +44,5 @@
     padding: 10px 0 10px 0;
 }
 .Course-price{
-    color: #FCC08A;
+    color: var(--primary-color);
 }

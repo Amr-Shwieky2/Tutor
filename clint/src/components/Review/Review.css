@@ -19,7 +19,7 @@
   }
   
   .star-rating {
-    color: #FCC08A; /* Gold color for stars */
+    color: var(--primary-color); /* Gold color for stars */
     margin: 10px 0;
   }
   

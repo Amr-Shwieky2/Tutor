@@ -1,6 +1,6 @@
 .add-course-form{
     width: 700px;
-    margin: 100px 0 0 1200px;
+    margin: 10px 0 0 1200px;
     padding: 20px;
     background: #fff;
     border-radius: 10px;
@@ -14,4 +14,18 @@
     /* border: 3px solid black; */
     font-size: larger;
     font-weight: bold;
+}
+
+.man-cou{
+    /* border: 3px solid black; */
+}
+.cur-card{
+    margin: 20px;
+    padding: 155px;
+    /* border: 3px solid black; */
+}
+
+.bu-cur{
+    margin-left: 1080px;
+    margin-top: -8.5%;
 }

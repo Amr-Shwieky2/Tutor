@@ -1,70 +1,82 @@
 /* Home.css */
 
 .homepage-container {
-    height: 85vh;
-    background-image: url('./img/group-ipu.png');
-    background-size: cover;
-    background-position: center;
-    color: #000000;
-    border: #000000 3px solid;
-    display: flex; /* Add display flex to align children */
-  }
-  
-  .home-content {
-    margin-top: 150px;
-    margin-left: 150px;
-    max-width: 600px;
-    max-height: 500px;
-    flex: 1; /* Take up remaining space */
-    text-align: left;
-    padding: 20px;
-    
-  }
-  
-  .learn-from-home-text {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin: 20px 0;
-  }
-  
-  .learn-sub-0,
-  .learn-sub-1,
-  .learn-sub-2 {
-    display: block;
-  }
-  
-  .lorem-ipsum-text {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-  }
-  
-  .tutor-text {
-    font-weight: bold;
-  }
-  
-  .learn {
-    color: rgb(251, 156, 70);
-  }
-  
-  .your-button {
-    background-color: rgb(6, 142, 110);
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 26px;
-  }
-  
-  .your-button:hover {
-    background-color: rgb(4, 111, 81); /* Darken the color on hover */
-  }
+  height: 85vh;
+  background-image: url("https://img.freepik.com/free-vector/businessman-giving-presentation-man-presenting-project-with-laptop-office-worker-business-mentor-coach-seminar_575670-1137.jpg?w=1800&t=st=1702955026~exp=1702955626~hmac=7041e34ab70d0e378b9b10aad3cd3d6030fcef108d74b0dd65c68925f8b4d715");
+  background-size: cover;
+  background-position: center;
+  color: #000000;
 
-  .your-button a{
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
-  }
+  display: flex; /* Add display flex to align children */
+}
+
+.home-content {
+  margin-top: 150px;
+  margin-left: 50%;
+  max-width: 600px;
+  max-height: 500px;
+  flex: 1; /* Take up remaining space */
+  text-align: left;
+  padding: 20px;
+  
+}
+
+.learn-from-home-text {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.learn-sub-0,
+.learn-sub-1,
+.learn-sub-2 {
+  display: block;
+}
+
+.lorem-ipsum-text {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.tutor-text {
+  font-weight: bold;
+}
+
+.learn {
+  color: rgb(251, 156, 70);
+}
+
+.your-button {
+  background-color: rgb(160,178,79);
+  color: white;
+  padding: 40px 20px;
+  width: 40%;
+  border: none;
+  border-radius: 15px; /* More pronounced rounded corners */
+  padding: 10px 20px; /* Top/bottom and left/right padding for a balanced look */
+  color: rgb(160,178,79); /* Text color */
+  text-transform: uppercase; /* Makes the text uppercase */
+  font-weight: bold; /* Makes the font bold */
+  font-family: 'Poppins', sans-serif; /* Assuming we're using the Poppins font as discussed earlier */
+  cursor: pointer; /* Changes the cursor to indicate the button is clickable */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: background-color 0.3s, box-shadow 0.3s, transform 0.2s; 
+}
+
+.your-button:hover {
+  background-color: rgb(160,178,79); /* Slightly lighter shade on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Larger shadow on hover for a "lifting" effect */
+  transform: translateY(-2px); /* Moves the button up a bit to give a "button press" effect */
+}
+
+.your-button a{
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+.perfect{
+  color:rgb(160,178,79) ;
+}

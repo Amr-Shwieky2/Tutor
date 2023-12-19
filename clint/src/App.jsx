@@ -8,6 +8,7 @@ import {
   AddReview,
   Auth,
   Courses,
+  Dashboard,
   Home,
   ManageTutor,
   NotFound,
@@ -28,12 +29,12 @@ const routes = [
         element: <Home />,
       },
       {
-        path: 'add',
-        element: <ProtectedRoute><ManageTutor /> </ProtectedRoute>,
-      },
-      {
         path: "auth",
         element: <Auth />,
+      },
+      {
+        path: 'add',
+        element: <ManageTutor />,
       },
       {
         path: "tutor",
@@ -49,6 +50,10 @@ const routes = [
           {
             path: ':tutorId/addCourses',
             element: <AddCourses/>,
+          },
+          {
+            path: ':tutorId/dashboard',
+            element: <Dashboard/>,
           },
         ]
       },

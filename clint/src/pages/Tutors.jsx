@@ -8,7 +8,9 @@ const Tutors = () => {
  
 
   
-  
+  useEffect(() => {
+    fetchTutors([]);
+  }, []);
 
   const [nearTutorCriteria, setNearTutorCriteria] = useState({
     zipcode: "",

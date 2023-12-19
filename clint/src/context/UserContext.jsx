@@ -15,7 +15,6 @@ export const UserProvider = ({ children }) => {
     setIsLoading(true);
     try {
       const response = await userAPI.getAllUsers();
-      // console.log(response.data.data);
       setUsers(response.data.data);
     } catch (err) {
       showToast(err.response?.data?.error || 'An error occurred', 'error');

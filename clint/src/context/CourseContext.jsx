@@ -51,7 +51,6 @@ export const CourseProvider = ({ children }) => {
 
 
   useEffect(() => {
-    // console.log("currentCourse", currentCourse);
     fetchCourses();
   }, []);
 

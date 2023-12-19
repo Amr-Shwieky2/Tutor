@@ -36,7 +36,7 @@
   }
   
   .message-btn {
-    background-color: #068E6E; /* Change to match your design color */
+    background-color: var(--primary-color); /* Change to match your design color */
     color: white;
     border: none;
     border-radius: 7px;

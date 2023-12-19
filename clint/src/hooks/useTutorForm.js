@@ -17,8 +17,6 @@ const useTutorForm = (tutorId) => {
     languages: [],
     careers: [],
     photo: "",
-    averageRating: 0,
-    averageCost: 0,
   });
 
   const [errors, setErrors] = useState({
@@ -31,8 +29,7 @@ const useTutorForm = (tutorId) => {
     languages: null,
     careers: null,
     photo: null,
-    averageRating: null,
-    averageCost: null,
+   
   });
 
   const [loading, setLoading] = useState(false);
@@ -95,10 +92,7 @@ const useTutorForm = (tutorId) => {
     e.preventDefault();
     let isValid = true;
     const newErrors = {};
-    setTutor((prevTutor) => ({
-      ...prevTutor,
-      photo: selectedPhoto,
-    }));
+    
 
     // Validation for 'name'
     if (tutor.name.trim() === "") {
@@ -155,7 +149,7 @@ const useTutorForm = (tutorId) => {
         } else {
           // Add a new tutor
           const newTutorId = await addNewTutor(tutor);
-          navigate(`/tutor/${newTutorId}`);
+          navigate(`/tutor/${newTutorId}/addCourses`);
         }
       } catch (error) {
         console.error("Error submitting tutor:", error);
