@@ -35,7 +35,7 @@ const TutorProfile = ({
 
           <p className="tutor-rating">Rating: {averageRating}</p>
           <p className="tutor-from">
-            <b>From:</b> {location.country}
+            {/* <b>From:</b> {location} */}
           </p>
           <p className="tutor-teach">
             {" "}

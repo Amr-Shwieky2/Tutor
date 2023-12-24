@@ -76,9 +76,9 @@ export const TutorProvider = ({ children }) => {
     [currentTutor.id]
   );
 
-  // useEffect(() => {
-  //   fetchTutors([]);
-  // }, []);
+  useEffect(() => {
+    fetchTutors([]);
+  }, []);
 
   const addNewTutor = async (tutor) => {
     setIsLoading(true);

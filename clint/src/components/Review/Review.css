@@ -43,7 +43,7 @@
   }
   
   .bar {
-    background: #FCC08A; /* Gold color for filled part */
+    background: var(--primary-color); /* Gold color for filled part */
     height: 100%;
     border-radius: 5px;
   }
@@ -58,7 +58,7 @@
   }
   
   .reviewer-rating {
-    color: #ffc107; /* Gold color for stars */
+    color: var(--primary-color); /* Gold color for stars */
   }
   
   .reviewer-comment {
@@ -71,7 +71,7 @@
   }
   
   .load-more-reviews {
-    background-color: #ffa500;
+    background-color: var(--primary-color);
     color: white;
     border: none;
     border-radius: 20px;
@@ -84,7 +84,7 @@
   }
   
   .load-more-reviews:hover {
-    background-color: #e69500;
+    background-color: #3a9100;
   }
   
 

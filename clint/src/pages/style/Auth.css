@@ -2,8 +2,11 @@
 .background-Auth {
   margin-top: 70px;
   height: 100vh; /* Use 100vh to cover the entire viewport height */
-  background-image: url('./img/background-auth.jpg');
-  background-size: 40%;
+  
+  
+  background-size: cover;
+  margin: 0;
+  padding: 0;
   background-repeat: no-repeat;
   
 }
@@ -11,7 +14,7 @@
 .background-Auth2 {
   margin-top: 150px;
   height: 100vh; /* Use 100vh to cover the entire viewport height */
-  background-image: url('./img/background-auth.jpg');
+  
   background-size: 40%;
   background-repeat: no-repeat;
   
@@ -70,7 +73,7 @@
 }
 
 .auth-btn {
-  background-color: rgb(251, 156, 70);
+  background-color: var(--primary-color);
   color: #fff;
   margin: 20px 0px 20px 0px;
   padding: 10px 15px;
@@ -81,7 +84,7 @@
 }
 
 .auth-btn:hover {
-  background-color: rgb(219, 122, 32);
+  background-color: rgb(21, 68, 8);
 }
 .switch{
   color: #007bff;
